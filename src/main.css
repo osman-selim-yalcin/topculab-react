@@ -1,10 +1,5 @@
 @import "tailwindcss";
 
-
-.navbar {
-  z-index: 1;
-}
-
 h2 {
   font-size: 3rem;
   text-align: center;
@@ -14,18 +9,10 @@ h2 {
   margin-top: 3rem;
 }
 
-.no-style {
-  text-decoration: none;
-  color: inherit;
-}
-
-.pointer {
-  cursor: pointer;
-  user-select: none;
-}
-
-@media (max-width: 575px) {
-  .container {
-    padding-inline: 2rem;
-  }
+p {
+  font-family: "Open Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
 }

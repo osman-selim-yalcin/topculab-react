@@ -9,8 +9,8 @@ export default function Home() {
   }, [lang]);
 
   return (
-    <section>
-      <div className="relative">
+    <div className="mx-auto">
+      <div className="relative ">
         <picture>
           <source
             srcSet="/static/Home_mobile.jpg"
@@ -25,16 +25,16 @@ export default function Home() {
         </picture>
 
         <div className="absolute inset-0 flex items-center justify-center">
-          <h2 className="text-white text-3xl md:text-4xl font-semibold drop-shadow-lg text-center px-4">
+          <h2 className="text-white md:text-4xl text-center px-4 [text-shadow:2px_2px_4px_#000]">
             {t("home_title", lang)}
           </h2>
         </div>
       </div>
 
-      <div className="max-w-4xl mx-auto px-4 py-10">
+      <div className="container mx-auto py-10">
         <p className="mb-4">{t("home_p1", lang)}</p>
         <p>{t("home_p2", lang)}</p>
       </div>
-    </section>
+    </div>
   );
 }
