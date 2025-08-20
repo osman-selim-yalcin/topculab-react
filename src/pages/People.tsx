@@ -39,7 +39,12 @@ export default function People() {
   }, [lang]);
 
   return (
-    <section className="container mx-auto py-10 px-4">
+    <section className="container mx-auto px-4">
+      <h2 className="text-3xl font-semibold tracking-tight flex flex-col items-center">
+        {t("people", lang)}
+        <div className="mt-3 h-[2px] w-48 bg-neutral-200" />
+      </h2>
+      {/* Intro */}
       {/* Principal Investigator */}
       <div className="mb-14">
         <h3 className="text-center text-2xl font-semibold mb-8">

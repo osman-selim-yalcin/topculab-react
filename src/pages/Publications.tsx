@@ -14,7 +14,10 @@ export default function Publications() {
     <section className="container mx-auto px-4">
       {/* Header + year chips */}
       <header className="text-center mb-8">
-        <h2 className="text-3xl font-semibold">{t("publications", lang)}</h2>
+        <h2 className="text-3xl font-semibold tracking-tight flex flex-col items-center">
+          {t("publications", lang)}
+          <div className="mt-3 h-[2px] w-48 bg-neutral-200" />
+        </h2>
         <div className="mt-4 flex flex-wrap justify-center gap-2 text-sm">
           <a
             href="#in-press"
