@@ -94,7 +94,7 @@ export default function Research() {
               src="/static/A.jpg"
               alt=""
               className="w-full max-w-sm rounded-xl shadow ring-1 ring-neutral-200/70"
-              loading="eager"
+              loading="lazy"
               decoding="async"
             />
           </div>
