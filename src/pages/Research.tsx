@@ -13,11 +13,11 @@ function Collapse({
 }) {
   const [open, setOpen] = useState(false);
   return (
-    <div className="mt-4">
+    <div className="mt-4 flex flex-col items-center">
       <button
         onClick={() => setOpen((s) => !s)}
         aria-expanded={open}
-        className="inline-flex items-center gap-2 rounded-lg border border-blue-200 bg-blue-50 px-3 py-1.5 text-sm font-medium text-blue-700 hover:bg-blue-100 focus:outline-none focus-visible:ring-2 focus-visible:ring-blue-300 transition"
+        className="inline-flex items-center gap-2 rounded-lg border px-3 py-1.5 text-sm font-medium focus:outline-none focus-visible:ring-2 cursor-pointer transition"
       >
         {title}
         <svg
@@ -31,11 +31,11 @@ function Collapse({
       </button>
 
       <div
-        className={`overflow-hidden transition-[max-height] duration-300 ${
+        className={`w-full overflow-hidden transition-[max-height] duration-300 ${
           open ? "max-h-[1000px]" : "max-h-0"
         }`}
       >
-        <div className="mt-3 rounded-xl border border-neutral-200 bg-neutral-50 p-4 md:p-5">
+        <div className="mt-3 rounded-xl border border-neutral-200 bg-neutral-50 p-4 md:p-5 text-left">
           {children}
         </div>
       </div>
@@ -66,7 +66,7 @@ export default function Research() {
   }, [lang]);
 
   return (
-    <section className="container mx-auto px-4 py-10">
+    <section className="container mx-auto px-4 ">
       {/* Başlık + ince ayraç */}
       <header className="mb-8">
         <h2 className="text-3xl font-semibold tracking-tight flex flex-col items-center">
@@ -94,7 +94,7 @@ export default function Research() {
               src="/static/A.jpg"
               alt=""
               className="w-full max-w-sm rounded-xl shadow ring-1 ring-neutral-200/70"
-              loading="lazy"
+              loading="eager"
               decoding="async"
             />
           </div>
@@ -234,7 +234,7 @@ export default function Research() {
       </article>
 
       {/* Block 4: görsel sol, metin sağ */}
-      <article className="rounded-2xl border border-neutral-200 bg-white shadow-sm p-5 md:p-6">
+      <article className="rounded-2xl border border-neutral-200 bg-white shadow-sm p-5 md:p-6 mb-10">
         <div className="flex flex-col lg:flex-row items-start gap-6 lg:gap-8">
           {/* Image */}
           <div className="w-full lg:w-5/12 flex justify-center">

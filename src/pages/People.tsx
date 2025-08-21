@@ -59,7 +59,7 @@ export default function People() {
                 className="w-full h-auto rounded-2xl mx-auto block mt-0 lg:mt-2 shadow"
                 src="/static/Picture1.jpg"
                 alt="Meymune Topcu"
-                loading="lazy"
+                loading="eager"
                 decoding="async"
               />
 
