@@ -3,7 +3,7 @@ import LocationOnIcon from "@mui/icons-material/LocationOn";
 import MailOutlineIcon from "@mui/icons-material/MailOutline";
 import XIcon from "@mui/icons-material/X";
 import { useLang } from "../hooks/useLang";
-import { t } from "../i18n";
+import { t } from "../i18/i18n";
 
 export default function Footer() {
   const [lang] = useLang();

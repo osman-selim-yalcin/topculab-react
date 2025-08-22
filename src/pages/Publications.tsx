@@ -1,7 +1,7 @@
 import LaunchIcon from "@mui/icons-material/Launch";
 import { useEffect } from "react";
 import { useLang } from "../hooks/useLang";
-import { t } from "../i18n";
+import { t } from "../i18/i18n";
 
 export default function Publications() {
   const [lang] = useLang();

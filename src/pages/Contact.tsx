@@ -1,6 +1,6 @@
 import { useEffect, useMemo } from "react";
 import { useLang } from "../hooks/useLang";
-import { t } from "../i18n";
+import { t } from "../i18/i18n";
 
 export default function Contact() {
   const [lang] = useLang();

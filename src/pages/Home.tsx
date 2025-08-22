@@ -1,6 +1,6 @@
 import { useEffect } from "react";
 import { useLang } from "../hooks/useLang";
-import { t } from "../i18n";
+import { t } from "../i18/i18n";
 
 export default function Home() {
   const [lang] = useLang();

@@ -1,7 +1,7 @@
 import { useMemo, useState } from "react";
 import { NavLink, useLocation } from "react-router-dom";
 import { useLang } from "../hooks/useLang";
-import { t } from "../i18n";
+import { t } from "../i18/i18n";
 
 export default function Header() {
   const { search } = useLocation();

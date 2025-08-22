@@ -1,7 +1,7 @@
 import LaunchIcon from "@mui/icons-material/Launch";
 import { useEffect, useState } from "react";
 import { useLang } from "../hooks/useLang";
-import { t } from "../i18n";
+import { t } from "../i18/i18n";
 
 /* ---------- Collapse: daha belirgin buton + yumuşak içerik kutusu ---------- */
 function Collapse({
@@ -79,7 +79,7 @@ export default function Research() {
       <article className="rounded-2xl border border-neutral-200 bg-white shadow-sm p-5 md:p-6 mb-10">
         <div className="flex flex-col lg:flex-row items-start gap-6 lg:gap-8">
           {/* Text */}
-          <div className="w-full lg:w-7/12">
+          <div className="w-full lg:w-7/12 order-2 lg:order1">
             <h3 className="text-2xl font-semibold tracking-tight mb-3">
               {t("research_1_title", lang)}
             </h3>
@@ -89,7 +89,7 @@ export default function Research() {
             />
           </div>
           {/* Image */}
-          <div className="w-full lg:w-5/12 flex justify-center">
+          <div className="w-full lg:w-5/12 flex justify-center order-1 lg:order-2">
             <img
               src="/static/A.jpg"
               alt=""
@@ -192,7 +192,7 @@ export default function Research() {
       <article className="rounded-2xl border border-neutral-200 bg-white shadow-sm p-5 md:p-6 mb-10">
         <div className="flex flex-col lg:flex-row items-start gap-6 lg:gap-8">
           {/* Text */}
-          <div className="w-full lg:w-7/12">
+          <div className="w-full lg:w-7/12  order-2 lg:order1">
             <h3 className="text-2xl font-semibold tracking-tight mb-3">
               {t("research_3_title", lang)}
             </h3>
@@ -202,7 +202,7 @@ export default function Research() {
             />
           </div>
           {/* Image */}
-          <div className="w-full lg:w-5/12 flex justify-center">
+          <div className="w-full lg:w-5/12 flex justify-center order-1 lg:order-2">
             <img
               src="/static/C.jpg"
               alt=""
