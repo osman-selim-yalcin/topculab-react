@@ -1,12 +1,17 @@
-import { useEffect } from "react";
 import { useLang } from "../hooks/useLang";
+import { useDocumentMeta } from "../hooks/useDocumentMeta";
 import { t } from "../i18/i18n";
 
 export default function Home() {
   const [lang] = useLang();
-  useEffect(() => {
-    document.title = `${t("home", lang)} - MiS Lab`;
-  }, [lang]);
+
+  useDocumentMeta({
+    title: `${t("home_title", lang)} | MiS Lab`,
+    description:
+      lang === "tr"
+        ? "Bellek ve Toplum Laboratuvarı, MEF Üniversitesi Psikoloji Bölümü'nde kolektif bellek, gelecek düşüncesi, algılanan faillik ve kolektif endişe üzerine araştırmalar yürütmektedir."
+        : "Memory in Society Lab at MEF University studies collective memory, mental time travel, perceived agency, and collective anxiety in social contexts.",
+  });
 
   return (
     <div className="mx-auto">
@@ -18,9 +23,14 @@ export default function Home() {
           />
           <img
             src="/static/Home.jpg"
-            alt="Graphic Design"
+            alt={t("home_title", lang)}
             className="w-full select-none"
             draggable={false}
+            loading="eager"
+            fetchPriority="high"
+            decoding="async"
+            width="1920"
+            height="528"
           />
         </picture>
 

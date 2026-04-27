@@ -1,13 +1,18 @@
-import { useEffect, useMemo } from "react";
+import { useMemo } from "react";
 import { useLang } from "../hooks/useLang";
+import { useDocumentMeta } from "../hooks/useDocumentMeta";
 import { t } from "../i18/i18n";
 
 export default function Contact() {
   const [lang] = useLang();
 
-  useEffect(() => {
-    document.title = `${t("contact", lang)} - MiS Lab`;
-  }, [lang]);
+  useDocumentMeta({
+    title: `${t("contact", lang)} - MiS Lab`,
+    description:
+      lang === "tr"
+        ? "Memory in Society Lab ile iletişim. MEF Üniversitesi Psikoloji Bölümü; topculab@gmail.com adresinden bize ulaşabilirsiniz."
+        : "Contact the Memory in Society Lab at MEF University, Department of Psychology — reach us at topculab@gmail.com.",
+  });
 
   // Google Maps embed src'sini dil parametresiyle üret
   const mapSrc = useMemo(() => {

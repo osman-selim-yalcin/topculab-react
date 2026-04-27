@@ -1,6 +1,7 @@
 import LaunchIcon from "@mui/icons-material/Launch";
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import { useLang } from "../hooks/useLang";
+import { useDocumentMeta } from "../hooks/useDocumentMeta";
 import { t } from "../i18/i18n";
 
 /* ---------- Collapse: daha belirgin buton + yumuşak içerik kutusu ---------- */
@@ -61,9 +62,13 @@ function DocLink({ href }: { href: string }) {
 export default function Research() {
   const [lang] = useLang();
 
-  useEffect(() => {
-    document.title = `${t("research", lang)} - MiS Lab`;
-  }, [lang]);
+  useDocumentMeta({
+    title: `${t("research", lang)} - MiS Lab`,
+    description:
+      lang === "tr"
+        ? "Araştırma alanlarımız: kolektif bellek ve gelecek düşüncesi, kişisel ve kolektif bilişin kesişimi, toplumsal anlatılar ve gelecek hedefleri, kolektif endişe ve seçimler."
+        : "Our research areas: collective memory and future thinking, the intersection of personal and collective cognition, national narratives and future goals, collective anxiety and elections.",
+  });
 
   return (
     <section className="container mx-auto px-4 ">
@@ -102,6 +107,15 @@ export default function Research() {
 
         <Collapse title={t("research_1_sub_1", lang)}>
           <ul className="list-disc pl-6 space-y-3 marker:text-neutral-500">
+            <li>
+              <p>
+                Yamashiro, J. &amp; <b>Topçu, M. N.</b> (2025). Collective future
+                thinking. In A. Erll &amp; W. Hirst (Eds.) Cognition, culture,
+                and political momentum: A companion to interdisciplinary memory
+                research. Oxford University Press.
+                <DocLink href="https://global.oup.com/academic/product/cognition-culture-and-political-momentum-9780197788332?cc=tr&lang=en&" />
+              </p>
+            </li>
             <li>
               <p>
                 <b>Topcu, M. N.</b> &amp; Hirst, W. (2022). Collective mental
@@ -260,6 +274,15 @@ export default function Research() {
 
         <Collapse title={t("research_1_sub_1", lang)}>
           <ul className="list-disc pl-6 space-y-3 marker:text-neutral-500">
+            <li>
+              <p>
+                Batiashvili, N., <b>Topçu, M. N.</b>, &amp; Wertsch, J. V.
+                (2025). Memory and anxiety: A sociocultural approach:
+                Introduction to the Special Collection. Memory, Mind &amp;
+                Media, 4, e9.
+                <DocLink href="https://www.cambridge.org/core/journals/memory-mind-and-media/article/memory-and-anxiety-a-sociocultural-approach/CDB5A304F35242C24DDE9664C4F97F0E" />
+              </p>
+            </li>
             <li>
               <p>
                 <b>Topçu, M. N.</b>, Mutaf, S., &amp; Boduroglu, A. (submitted).

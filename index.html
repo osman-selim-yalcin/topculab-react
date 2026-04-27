@@ -2,10 +2,16 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <script
-      src="https://kit.fontawesome.com/e46f70391b.js"
-      crossorigin="anonymous"
-    ></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#171717" />
+    <meta name="robots" content="index,follow,max-image-preview:large" />
+    <meta name="googlebot" content="index,follow" />
+    <meta name="format-detection" content="telephone=no" />
+
+    <link rel="canonical" href="https://topculab.com/" />
+    <link rel="alternate" href="https://topculab.com/?lang=en" hreflang="en" />
+    <link rel="alternate" href="https://topculab.com/?lang=tr" hreflang="tr" />
+    <link rel="alternate" href="https://topculab.com/" hreflang="x-default" />
 
     <link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
@@ -16,37 +22,103 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
+      rel="preload"
+      as="image"
+      href="/static/Home.jpg"
+      media="(min-width: 1025px)"
+      fetchpriority="high"
+    />
+    <link
+      rel="preload"
+      as="image"
+      href="/static/Home_mobile.jpg"
+      media="(max-width: 1024px)"
+      fetchpriority="high"
+    />
+    <link
       href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
       rel="stylesheet"
     />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://kit.fontawesome.com/e46f70391b.css"
+      crossorigin="anonymous"
+      media="print"
+      onload="this.media='all'"
+    />
 
+    <title>Memory in Society Lab | MEF University</title>
     <meta
       name="description"
-      content="Our lab, based in the Department of Psychology at MEF University, is dedicated to studying the dynamics involved in human memory."
+      content="Memory in Society Lab at MEF University — research on collective memory, mental time travel, perceived agency, and collective anxiety, led by Dr. Meymune N. Topçu."
     />
     <meta
       name="keywords"
-      content="memory, society, lab, research, publications, science, psychology, cognitive"
+      content="memory in society lab, MiS Lab, MEF University, collective memory, mental time travel, collective anxiety, collective future thinking, Meymune Topçu, psychology, cognitive science"
     />
+    <meta name="author" content="Memory in Society Lab" />
 
-    <meta property="og:title" content="Memory in Society Lab" />
+    <meta property="og:site_name" content="Memory in Society Lab" />
+    <meta property="og:title" content="Memory in Society Lab | MEF University" />
     <meta
       property="og:description"
-      content="Our lab is dedicated to studying the dynamics involved in human memory."
+      content="Research on collective memory, mental time travel, perceived agency, and collective anxiety at MEF University."
     />
-    <meta property="og:image" content="/favicon.png" />
-    <meta property="og:url" content="https://topculab.com" />
+    <meta property="og:image" content="https://topculab.com/static/Home.jpg" />
+    <meta property="og:image:width" content="1920" />
+    <meta property="og:image:height" content="528" />
+    <meta property="og:url" content="https://topculab.com/" />
     <meta property="og:type" content="website" />
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:locale:alternate" content="tr_TR" />
 
-    <meta name="twitter:title" content="Memory in Society Lab" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Memory in Society Lab | MEF University" />
     <meta
       name="twitter:description"
-      content="Our lab is dedicated to studying the dynamics involved in human memory."
+      content="Research on collective memory, mental time travel, perceived agency, and collective anxiety at MEF University."
     />
-    <meta name="twitter:image" content="/favicon.png" />
+    <meta name="twitter:image" content="https://topculab.com/static/Home.jpg" />
 
-    <title>Mis Lab</title>
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "ResearchOrganization",
+        "name": "Memory in Society Lab",
+        "alternateName": "MiS Lab",
+        "url": "https://topculab.com/",
+        "logo": "https://topculab.com/static/mef-logo-en.png",
+        "image": "https://topculab.com/static/Home.jpg",
+        "description": "Research lab in the Department of Psychology at MEF University studying collective memory, mental time travel, perceived agency, and collective anxiety.",
+        "email": "topculab@gmail.com",
+        "parentOrganization": {
+          "@type": "CollegeOrUniversity",
+          "name": "MEF University",
+          "url": "https://www.mef.edu.tr/"
+        },
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "İstanbul",
+          "addressCountry": "TR"
+        },
+        "founder": {
+          "@type": "Person",
+          "name": "Meymune N. Topçu",
+          "jobTitle": "Assistant Professor of Psychology",
+          "affiliation": "MEF University",
+          "sameAs": [
+            "https://www.linkedin.com/in/meymune-top%C3%A7u-1545951a/",
+            "https://x.com/meymunent",
+            "https://www.researchgate.net/profile/Meymune-Topcu-2"
+          ]
+        },
+        "sameAs": [
+          "https://x.com/meymunent",
+          "https://www.linkedin.com/in/meymune-top%C3%A7u-1545951a/",
+          "https://www.researchgate.net/profile/Meymune-Topcu-2"
+        ]
+      }
+    </script>
   </head>
   <body>
     <div id="root"></div>

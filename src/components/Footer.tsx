@@ -111,6 +111,8 @@ export default function Footer() {
                 }
                 loading="lazy"
                 decoding="async"
+                width="320"
+                height="120"
               />
             </a>
           </div>

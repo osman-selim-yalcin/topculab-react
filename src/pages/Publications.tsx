@@ -1,14 +1,18 @@
 import LaunchIcon from "@mui/icons-material/Launch";
-import { useEffect } from "react";
 import { useLang } from "../hooks/useLang";
+import { useDocumentMeta } from "../hooks/useDocumentMeta";
 import { t } from "../i18/i18n";
 
 export default function Publications() {
   const [lang] = useLang();
 
-  useEffect(() => {
-    document.title = `${t("publications", lang)} - MiS Lab`;
-  }, [lang]);
+  useDocumentMeta({
+    title: `${t("publications", lang)} - MiS Lab`,
+    description:
+      lang === "tr"
+        ? "Bellek ve Toplum Laboratuvarı'nın yıllara göre derlenmiş hakemli makaleleri, kitap bölümleri ve diğer akademik yayınları."
+        : "Peer-reviewed articles, book chapters, and other academic publications from the Memory in Society Lab, organized by year.",
+  });
 
   return (
     <section className="container mx-auto px-4">
@@ -20,10 +24,10 @@ export default function Publications() {
         </h2>
         <div className="mt-4 flex flex-wrap justify-center gap-2 text-sm">
           <a
-            href="#in-press"
+            href="#y2025"
             className="px-3 py-1 rounded-full border border-neutral-300 hover:bg-neutral-100 transition"
           >
-            In Press
+            2025
           </a>
           <a
             href="#y2024"
@@ -66,13 +70,25 @@ export default function Publications() {
 
       {/* Content */}
       <div className="mx-auto max-w-3xl mb-10">
-        {/* In Press */}
-        <YearSection id="in-press" title="In Press" pillTone="dark">
+        {/* 2025 */}
+        <YearSection id="y2025" title="2025" pillTone="dark">
           <PubItem>
-            Yamashiro, J. & <strong>Topçu, M. N.</strong> (in press). Collective
-            future thinking. In A. Erll & W. Hirst (Eds.) Cognition, culture,
-            and political momentum: A companion to interdisciplinary memory
-            research.
+            Yamashiro, J. & <strong>Topçu, M. N.</strong> (2025). Collective
+            future thinking. In A. Erll & W. Hirst (Eds.){" "}
+            <em>
+              Cognition, culture, and political momentum: A companion to
+              interdisciplinary memory research.
+            </em>{" "}
+            Oxford University Press.{" "}
+            <DocLink href="https://global.oup.com/academic/product/cognition-culture-and-political-momentum-9780197788332?cc=tr&lang=en&" />
+          </PubItem>
+
+          <PubItem>
+            Batiashvili, N., <strong>Topçu, M. N.</strong>, & Wertsch, J. V.
+            (2025). Memory and anxiety: A sociocultural approach: Introduction
+            to the Special Collection.{" "}
+            <em>Memory, Mind & Media, 4, e9.</em>{" "}
+            <DocLink href="https://www.cambridge.org/core/journals/memory-mind-and-media/article/memory-and-anxiety-a-sociocultural-approach/CDB5A304F35242C24DDE9664C4F97F0E" />
           </PubItem>
         </YearSection>
 

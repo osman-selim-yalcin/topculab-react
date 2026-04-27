@@ -17,10 +17,12 @@ export const translations = {
     people_1_p1:
       "Meymune N. Topçu is an Assistant Professor of Psychology at MEF University, Istanbul, where she brings an interdisciplinary approach to her research on collective memory, future thinking, and social cognition. Meymune earned her B.A. in Psychology and History with honors from Boğaziçi University in Istanbul. She then pursued graduate studies at the New School for Social Research in New York, where she completed her M.A. and later a Ph.D. in Cognitive, Social, and Developmental Psychology in 2021. During her doctoral work, Meymune developed a research focus on how perceived agency and cultural narratives influence perceptions of the past and future, a theme she continues to explore.",
     people_1_p2:
-      "In 2023, she joined MEF University, while also holding an Honorary Visiting Scholar position at Washington University in St. Louis. Meymune’s research has been published in journals such as JEP: General, JEP: Learning, Memory, and Cognition, and Memory. In her ongoing funded research, she focuses on how collective memory and future thinking frame the experiences of collective anxiety. She also explores how these processes influence people's perception and evaluation of and behavior on existential threats like climate change, nuclear disasters, pandemics etc.",
+      "In 2023, she joined MEF University, while also holding an Honorary Visiting Scholar position at Washington University in St. Louis. Meymune’s research has been published in journals such as Journal of Experimental Psychology: Learning, Memory Studies, JEP: General, and Memory. In her ongoing funded research, she focuses on how collective memory and future thinking frame the experiences of collective anxiety. She also explores how these processes influence people's perception and evaluation of and behavior on existential threats like climate change, nuclear disasters, pandemics etc.",
     people_research_assistant: "Research Assistants",
     people_2_p1:
       "İnayet Dinçer is currently pursuing an MSc in Neurocognitive Psychology at Carl von Ossietzky University, with a research focus bridging cognitive neuroscience and social cognition. İnayet's work spans various EEG and neuromodulation studies, providing substantial experience in EEG data acquisition and analysis, particularly within cognitive and socio-cognitive paradigms. Notably, İnayet contributed to a TÜBİTAK 1002-funded study investigating dehumanization dynamics within minimal groups, exploring how group size and status influence this phenomenon. Additionally, İnayet has presented research findings in poster sessions at national conferences, including studies on the relationship between negative mood states and the truth effect. Outside of academic work, İnayet enjoys spending time with friends, learning German, and watching anime.",
+    people_3_p1:
+      "Büşra Gözde Akay is currently an MA student at MEF University, having completed her undergraduate studies at Kadir Has University. Her academic interests center on cognitive and social psychology, with a particular focus on collective memory, collective angst, and mental time travel. Through her research, Gözde seeks to uncover how the ways groups reconstruct their past and project their future serve as a foundation for collective anxiety, while examining the societal mechanisms that drive these temporal perceptions. Outside of her academic pursuits, she enjoys socializing with friends and spending time with her cat. She enjoys exploring diverse cultural narratives through world literature and finds relaxation in video gaming, which is a fun way to recharge during her free time.",
     people_members: "Members",
     people_m1: "Undergraduate Psychology Student at MEF University",
     current_collaborators: "Current Collaborators",
@@ -46,6 +48,26 @@ export const translations = {
     contact_p4:
       "If you would like to join the lab, please send us your CV along with a short statement on the research areas/questions you are interested in.",
     contact_location_title: "Lab's Location",
+    news_title: "News & Events",
+    news_1_date: "December 2025",
+    news_1_text:
+      "Elif Sözer from Koç University presented her research titled ‘Beyond Winners and Losers: Emergence of Collective Mental Time Travel Pathways Upon Remembering Consequential Elections’ at the lab meeting.",
+    news_2_date: "October 2025",
+    news_2_text: "We held our first lab meeting for the Fall semester.",
+    news_3_date: "September 2025",
+    news_3_text:
+      "Lab director, Meymune Topçu, presented her paper titled ‘Toplumsal endişeler, bellek, ve gelecek düşüncesi: Türkiye ve ABD başkanlık seçimleri’ at IX. Deneysel Bilişsel Psikoloji Sempozyumu at Koç University, Istanbul, Türkiye.",
+    news_4_date: "July 2025",
+    news_4_text:
+      "Lab director, Meymune Topçu, presented her paper titled ‘Witnessing genocide through social media: Transnational narratives, memory, and activism’ at Memory Studies Association’s 9th Annual Conference in Prague, Czechia.",
+    news_5_date: "June 2025",
+    news_5_text:
+      "Lab director, Meymune Topçu, presented her paper titled ‘Collective Anxiety, memory, and future thinking in the context of US presidential elections’ at the 15th Biennial Meeting for Society for Applied Research in Memory and Cognition in Kildare, Ireland.",
+    news_6_date: "February 2025",
+    news_6_text: "We held our first lab meeting for the Spring semester.",
+    news_7_date: "November 2024",
+    news_7_text:
+      "Lab director, Meymune Topçu, presented her paper titled ‘National goals and collective future thinking: Structural influences’ at Psychonomic Society’s 65th Annual Meeting in New York, USA.",
     "404": "The page you are looking for could not be found.",
   },
   tr: {
@@ -66,10 +88,12 @@ export const translations = {
     people_1_p1:
       "Meymune Topçu, İstanbul MEF Üniversitesi'nde Psikoloji alanında Dr. Öğretim Üyesi olarak görev yapmaktadır ve kolektif bellek, gelecek düşüncesi ve sosyal biliş üzerine yaptığı araştırmalarda disiplinler arası bir yaklaşım benimsemektedir. Lisans eğitimini Boğaziçi Üniversitesi'nde Psikoloji ve Tarih bölümlerinde onur derecesi ile tamamlamıştır. Ardından New York'ta bulunan New School for Social Research'te yüksek lisans ve sonrasında 2021 yılında Bilişsel, Sosyal ve Gelişimsel Psikoloji alanında doktora derecesini almıştır. Doktora çalışmaları sırasında, geçmiş ve gelecek algılarının, algılanan faillik ve anlatılar tarafından nasıl şekillendirildiğine odaklanan bir araştırma alanı geliştirmiştir.",
     people_1_p2:
-      "2023 yılında MEF Üniversitesi'ne katılan Meymune Topçu, aynı zamanda St. Louis'deki Washington Üniversitesi'nde Onursal Ziyaretçi Akademisyen olarak görev almıştır. Araştırmaları JEP: General, JEP: Learning, Memory, and Cognition, ve Memory gibi dergilerde yayımlanmıştır. Devam eden fon destekli araştırmalarında, kolektif bellek ve gelecek düşüncesinin toplumsal kaygı deneyimlerini nasıl şekillendirdiğine odaklanmaktadır. Ayrıca, bu süreçlerin insanların varoluşsal tehditlere (iklim değişikliği, nükleer felaketler, pandemiler gibi) dair değerlendirilmelerini nasıl etkilediğini araştırmaktadır.",
+      "2023 yılında MEF Üniversitesi'ne katılan Meymune Topçu, aynı zamanda St. Louis'deki Washington Üniversitesi'nde Onursal Ziyaretçi Akademisyen olarak görev almıştır. Araştırmaları Journal of Experimental Psychology: Learning, Memory Studies, JEP: General, ve Memory gibi dergilerde yayımlanmıştır. Devam eden fon destekli araştırmalarında, kolektif bellek ve gelecek düşüncesinin toplumsal kaygı deneyimlerini nasıl şekillendirdiğine odaklanmaktadır. Ayrıca, bu süreçlerin insanların varoluşsal tehditlere (iklim değişikliği, nükleer felaketler, pandemiler gibi) dair değerlendirilmelerini nasıl etkilediğini araştırmaktadır.",
     people_research_assistant: "Araştırma Asistanları",
     people_2_p1:
       "İnayet Dinçer, şu anda Carl von Ossietzky Üniversitesi'nde Nörobilişsel Psikoloji alanında yüksek lisans yapmaktadır ve bilişsel sinirbilim ile sosyal bilişi birleştiren bir araştırma odağına sahiptir. İnayet’in çalışmaları, bilişsel ve sosyo-bilişsel paradigmalar içerisinde EEG veri toplama ve analizinde kapsamlı deneyim kazandıran çeşitli EEG ve nöromodülasyon çalışmalarını içermektedir. İnayet TÜBİTAK 1002 destekli minimal gruplarda insanlık dışılaştırma dinamiklerini inceleyen bir projeye katkıda bulunmuştur ve ulusal konferanslarda poster sunumları yapmıştır. Akademik çalışmalarının dışında, İnayet arkadaşlarıyla vakit geçirmekten, Almanca öğrenmekten ve anime izlemekten hoşlanmaktadır.",
+    people_3_p1:
+      "Büşra Gözde Akay, lisans eğitimini Kadir Has Üniversitesi'nde tamamladıktan sonra şu anda MEF Üniversitesi'nde yüksek lisans öğrencisi olarak akademik çalışmalarına devam etmektedir. Akademik ilgi alanları bilişsel ve sosyal psikoloji üzerine yoğunlaşmakta olup özellikle kolektif bellek, kolektif kaygı ve zihinsel zaman yolculuğu konularına odaklanmaktadır. Araştırmalarıyla Gözde, grupların geçmişlerini yeniden inşa etme ve geleceklerini tasavvur etme biçimlerinin kolektif kaygıya nasıl zemin hazırladığını ortaya koymayı; bu zamansal algıları yönlendiren toplumsal mekanizmaları incelemeyi hedeflemektedir. Akademik uğraşlarının dışında, arkadaşlarıyla vakit geçirmekten ve kedisiyle ilgilenmekten keyif almaktadır. Dünya edebiyatı aracılığıyla farklı kültürel anlatıları keşfetmeyi sever ve boş zamanlarında dinlenmek için video oyunlarını eğlenceli bir yöntem olarak görmektedir.",
     people_members: "Üyeler",
     people_m1: "Psikoloji Lisans Öğrencisi, MEF Üniversitesi",
     current_collaborators: "Devam Eden İşbirlikleri",
@@ -95,6 +119,26 @@ export const translations = {
     contact_p4:
       "Laboratuvara katılmak isterseniz, lütfen ilgi duyduğunuz araştırma alanları/soruları hakkında kısa bir açıklamayı ve CV'nizi bize iletin.",
     contact_location_title: "Lab'ın Konumu",
+    news_title: "Haberler ve Etkinlikler",
+    news_1_date: "Aralık 2025",
+    news_1_text:
+      "Koç Üniversitesinden araştırmacı Elif Sözer, ‘Kazananlar ve Kaybedenlerin Ötesinde: Seçimlerden Sonra Gelecek Üzerindeki Etkinliği Güçlendiren Kolektif Zihinsel Zaman Yolculuğu Yolları’ isimli çalışmasını lab toplantısında sundu.",
+    news_2_date: "Ekim 2025",
+    news_2_text: "Güz döneminin ilk lab toplantısını gerçekleştirdik.",
+    news_3_date: "Eylül 2025",
+    news_3_text:
+      "Lab yürütücüsü Meymune Topçu, ‘Toplumsal endişeler, bellek, ve gelecek düşüncesi: Türkiye ve ABD başkanlık seçimleri’ başlıklı çalışmasını Koç Üniversitesi’nde gerçekleştirilen IX. Deneysel Bilişsel Psikoloji Sempozyumunda sundu.",
+    news_4_date: "Temmuz 2025",
+    news_4_text:
+      "Lab yürütücüsü Meymune Topçu, ‘Witnessing genocide through social media: Transnational narratives, memory, and activism’ başlıklı çalışmasını Memory Studies Association’ın Çekya’da gerçekleştirilen 9. Yıllık konferansında sundu.",
+    news_5_date: "Haziran 2025",
+    news_5_text:
+      "Lab yürütücüsü Meymune Topçu, ‘Collective Anxiety, memory, and future thinking in the context of US presidential elections’ başlıklı çalışmasını Society for Applied Research in Memory and Cognition’ın İrlanda’da gerçekleştirdiği 15. Bienal toplantısında sundu.",
+    news_6_date: "Şubat 2025",
+    news_6_text: "Bahar döneminin ilk lab toplantısını gerçekleştirdik.",
+    news_7_date: "Kasım 2024",
+    news_7_text:
+      "Lab yürütücüsü Meymune Topçu, ‘National goals and collective future thinking: Structural influences’ başlıklı çalışmasını Psychonomic Society’nin New York’ta gerçekleştirdiği 65. Yıllık toplantısında sundu.",
     "404": "Aradığınız sayfa bulunamadı.",
   },
 } as const;

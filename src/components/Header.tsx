@@ -48,6 +48,9 @@ export default function Header() {
             <NavLink to={withLang("/publications")} className={navLinkClass}>
               {t("publications", lang)}
             </NavLink>
+            <NavLink to={withLang("/news-events")} className={navLinkClass}>
+              {t("news-events", lang)}
+            </NavLink>
             <NavLink to={withLang("/contact")} className={navLinkClass}>
               {t("contact", lang)}
             </NavLink>
@@ -174,6 +177,13 @@ export default function Header() {
                 onClick={() => setMenuOpen(false)}
               >
                 {t("publications", lang)}
+              </NavLink>
+              <NavLink
+                to={withLang("/news-events")}
+                className={navLinkClass}
+                onClick={() => setMenuOpen(false)}
+              >
+                {t("news-events", lang)}
               </NavLink>
               <NavLink
                 to={withLang("/contact")}
