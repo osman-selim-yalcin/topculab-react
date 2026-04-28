@@ -5,6 +5,7 @@ import LocationOnIcon from "@mui/icons-material/LocationOn";
 import { useLang } from "../hooks/useLang";
 import { useDocumentMeta } from "../hooks/useDocumentMeta";
 import { t } from "../i18/i18n";
+import ResearchGateIcon from "../components/ResearchGateIcon";
 
 export default function Contact() {
   const [lang] = useLang();
@@ -80,10 +81,7 @@ export default function Contact() {
               className="group flex items-start gap-4 -mx-2 px-2 py-3 rounded-xl transition-colors duration-300 hover:bg-neutral-50"
             >
               <span className="flex-shrink-0 inline-flex items-center justify-center h-10 w-10 rounded-full border border-neutral-300 bg-white text-neutral-700 group-hover:border-neutral-900 group-hover:bg-neutral-900 group-hover:text-white transition duration-300">
-                <i
-                  className="fa-brands fa-researchgate text-[18px] leading-none"
-                  aria-hidden="true"
-                />
+                <ResearchGateIcon size={18} />
               </span>
               <span className="flex-1 min-w-0">
                 <span className="block text-[11px] uppercase tracking-[0.22em] font-semibold text-neutral-500">

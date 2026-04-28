@@ -4,6 +4,7 @@ import MailOutlineIcon from "@mui/icons-material/MailOutline";
 import XIcon from "@mui/icons-material/X";
 import { useLang } from "../hooks/useLang";
 import { t } from "../i18/i18n";
+import ResearchGateIcon from "./ResearchGateIcon";
 
 export default function Footer() {
   const [lang] = useLang();
@@ -83,10 +84,7 @@ export default function Footer() {
                 className="hover:text-white transition"
                 title="ResearchGate"
               >
-                <i
-                  className="fa-brands fa-researchgate text-[24px] leading-none align-middle"
-                  aria-hidden="true"
-                />
+                <ResearchGateIcon size={24} className="align-middle" />
               </a>
             </div>
           </div>

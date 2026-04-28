@@ -6,6 +6,7 @@ import { t } from "../i18/i18n";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import MailOutlineIcon from "@mui/icons-material/MailOutline";
 import XIcon from "@mui/icons-material/X";
+import ResearchGateIcon from "../components/ResearchGateIcon";
 
 function IconLink({
   href,
@@ -89,10 +90,7 @@ export default function People() {
                   href="https://www.researchgate.net/profile/Meymune-Topcu-2"
                   title="ResearchGate"
                 >
-                  <i
-                    className="fa-brands fa-researchgate text-[24px] leading-none align-middle"
-                    aria-hidden="true"
-                  />
+                  <ResearchGateIcon size={24} className="align-middle" />
                 </IconLink>
                 <IconLink
                   href="/static/Meymune_Topcu_CV_2024.pdf"
