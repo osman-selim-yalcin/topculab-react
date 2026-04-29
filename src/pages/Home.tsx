@@ -26,13 +26,12 @@ export default function Home() {
   const areas: { titleKey: TKey; image: string }[] = [
     { titleKey: "research_1_title", image: "/static/A.jpg" },
     { titleKey: "research_2_title", image: "/static/B.jpg" },
-    { titleKey: "research_3_title", image: "/static/C.jpg" },
-    { titleKey: "research_4_title", image: "/static/D.jpg" },
   ];
 
   const labels = {
     welcome: lang === "tr" ? "Hoş Geldiniz" : "Welcome",
-    inquiry: lang === "tr" ? "Araştırma Alanları" : "Areas of Inquiry",
+    selectedResearch:
+      lang === "tr" ? "Seçilmiş Araştırma Alanları" : "Selected Research Areas",
     latest: lang === "tr" ? "Son Haberler" : "Latest",
     connect: lang === "tr" ? "İletişim" : "Connect",
     viewResearch:
@@ -94,7 +93,7 @@ export default function Home() {
             {t("home_p1", lang)}
           </p>
 
-          <p className="mt-5 text-[15px] text-neutral-700 leading-[1.75]">
+          <p className="mt-5 text-[17px] md:text-[18px] text-neutral-800 leading-[1.8]">
             {t("home_p2", lang)}
           </p>
 
@@ -134,7 +133,7 @@ export default function Home() {
 
         {/* Areas of Inquiry */}
         <div className="max-w-5xl mx-auto mt-16">
-          <SectionPill label={labels.inquiry} />
+          <SectionPill label={labels.selectedResearch} />
 
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 md:gap-5">
             {areas.map((area) => (

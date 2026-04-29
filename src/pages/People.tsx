@@ -300,22 +300,10 @@ const COLLABORATORS: ReadonlyArray<{
     countryTr: "ABD",
   },
   {
-    name: "Dr. Karl Szpunar",
-    institution: "Toronto Metropolitan University",
-    country: "Canada",
-    countryTr: "Kanada",
-  },
-  {
     name: "Dr. Elif Sözer",
     institution: "Koç University",
     country: "Türkiye",
     countryTr: "Türkiye",
-  },
-  {
-    name: "Dr. Jeremy Yamashiro",
-    institution: "UC Santa Cruz",
-    country: "USA",
-    countryTr: "ABD",
   },
   {
     name: "Dr. James Wertsch",

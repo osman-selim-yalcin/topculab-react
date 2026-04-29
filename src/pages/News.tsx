@@ -1,6 +1,6 @@
+import { useDocumentMeta } from "../hooks/useDocumentMeta";
 import { useLang } from "../hooks/useLang";
 import { t, type TKey } from "../i18/i18n";
-import { useDocumentMeta } from "../hooks/useDocumentMeta";
 
 type NewsItem = {
   id: number;
@@ -21,7 +21,7 @@ const ITEMS: NewsItem[] = [
   },
   {
     id: 3,
-    image: "/static/5. Koç.JPG",
+    image: "/static/5-koc-symposium.jpg",
     imageAlt:
       "IX. Deneysel Bilişsel Psikoloji Sempozyumu, Koç University, September 2025",
   },
@@ -83,12 +83,12 @@ export default function News() {
                 } items-stretch`}
               >
                 {item.image && (
-                  <div className="relative md:w-[280px] md:shrink-0">
-                    <div className="aspect-[4/5] md:aspect-auto md:h-full overflow-hidden bg-neutral-100">
+                  <div className="relative md:w-[320px] md:shrink-0">
+                    <div className="aspect-[4/3] md:aspect-auto md:h-full overflow-hidden bg-neutral-100 flex items-center justify-center">
                       <img
                         src={item.image}
                         alt={item.imageAlt ?? ""}
-                        className="w-full h-full object-cover"
+                        className="w-full h-full object-contain"
                         loading="lazy"
                         decoding="async"
                       />
