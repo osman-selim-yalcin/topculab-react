@@ -93,7 +93,7 @@ export default function People() {
                   <ResearchGateIcon size={24} className="align-middle" />
                 </IconLink>
                 <IconLink
-                  href="/static/Meymune_Topcu_CV_2024.pdf"
+                  href="/static/meymune_cv.pdf"
                   title="CV (PDF)"
                   external={true}
                 >
